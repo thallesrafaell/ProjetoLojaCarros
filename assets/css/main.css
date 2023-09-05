@@ -7,6 +7,10 @@
     font-family: Roboto, sans-serif;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 header{
     background-color: rgb(22, 22, 22);
     color: white;
@@ -31,6 +35,7 @@ margin: 0px auto;
 
 .container-hamburguer{
     width: 32px;
+    cursor:pointer;
 }
 .menu-hamburguer{
     height: 2px;
@@ -40,6 +45,7 @@ margin: 0px auto;
     border: 2px solid white;
 }
 nav{
+    display: none;
     background-color: rgb(44, 44, 44);
     width: 100%;
     padding-left: 10px;
@@ -63,3 +69,70 @@ nav ul li a{
     color: white;
     text-transform: uppercase;
 }
+
+.container-flex{
+    display: flex;
+}
+
+#sobre-a-loja img{
+    max-width: 400px;
+    margin-right: 16px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+section{
+    padding: 48px 0px;
+}
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-veiculos{
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li{
+    list-style: none;
+    max-width: 30%;
+}
+.lista-veiculos li img{
+    max-width: 100%;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+.item-central{
+    margin: 0 5%;
+}
+
+.lista-veiculos li button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #114097;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+}
+
+.price del{
+    color: #adacac;
+    font-size: 14px;
+}
+
+
+
