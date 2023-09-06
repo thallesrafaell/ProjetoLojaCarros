@@ -14,14 +14,16 @@ html{
 header{
     background-color: rgb(22, 22, 22);
     color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     padding-top: 10px;
-
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-header > .container{
+
+header > .container,
+footer > .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +111,7 @@ section h2 {
     margin: 0 5%;
 }
 
-.lista-veiculos li button{
+button{
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -134,5 +136,53 @@ section h2 {
     font-size: 14px;
 }
 
+.form-campo{
+    margin: 16px;
+}
+
+.form-campo laber{
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input, .form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;  
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+form{
+    max-width: 360px;
+}
+
+footer{
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+form button{
+    max-width: 120px;
+    margin-left: 15px;
+}
+
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img{
+    width: 32px;
+    padding-top: 10px;
+}
+
+footer .container{
+    justify-content: space-between;
+    align-items: center;
+}
 
 
