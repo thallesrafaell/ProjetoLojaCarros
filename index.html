@@ -181,7 +181,7 @@
       </ul>
     </div>
   </section>
-  <section>
+  <section id="contato">
     <div class="contatos container">
       <h2>Entre em contato:</h2>
       <form action="">
@@ -224,54 +224,10 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="assets/js/main.js"></script>
   <script src="assets/js/jquery.mask.min.js"></script>
   <script src="assets/js/jquery.validate.min.js"></script>
   <script src="assets/js/messages_pt_BR.min.js"></script>
-  <script>
-    $(document).ready(() =>{
-
-      //config slide
-      $('#slide').slick({autoplay: true,})
-
-      //add mask
-      $('#telefone').mask( '(00) 0.0000-0000' , {placeholder: '(00) 0.0000-0000'})
-
-      //validador de formularios
-      $('form').validate({
-          rules: {
-            nome: {required: true
-            },
-            telefone: {required: true
-            },
-            email: {
-              required: true, 
-              email:true
-            },
-            veiculoInteresse: {
-              required: true
-            },
-            mensagem: {
-              required: true
-
-            }
-          },
-          messages: {
-            nome: 'Por favor, digite seu nome e tente novamente.',
-            telefone: 'Por favor, digite seu telefone e tente novamente.',
-            email: 'Por favor, digite seu e-mail e tente novamente.'
-          },
-          submitHandler: function(form){},
-          invalidHandler: function(evento, validador){
-            let camposIncorretos = validador.numberOfInvalids()
-            if(camposIncorretos){
-              alert(`Existem ${camposIncorretos} campos incorretos`)
-            }
-          }
-
-      })
-    })
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
